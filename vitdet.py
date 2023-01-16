@@ -14,6 +14,12 @@ from detectron2.modeling.backbone.vit import SimpleFeaturePyramid
 from detectron2.modeling.backbone.fpn import LastLevelMaxPool
 from detectron2.layers.batch_norm import LayerNorm
 
+"""
+In this file, we instantiate the human-pose ViTDet model
+either from scratch or from the pre-trained pre-trained model.
+We start by recreating the ViTDet architecture in pure PyTorch
+and then we replace the backbone by the ViTDet one.
+"""
 
 def get_original_vitdet(pre_trained):
   from detectron2.config import LazyConfig, instantiate

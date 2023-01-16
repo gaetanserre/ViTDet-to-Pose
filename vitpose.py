@@ -2,6 +2,12 @@
 # Created in 2022 by Gaëtan Serré
 #
 
+"""
+In this file, we instantiate ViTPose.
+We create a wrapper class that will allow us to use modify the output format
+of the model to match the COCO format.
+"""
+
 import torch
 import numpy as np
 
