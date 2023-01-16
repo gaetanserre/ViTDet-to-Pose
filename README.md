@@ -1,13 +1,15 @@
 ## Deep Learning Project - MVA 2022-2023
 
-This project is about verifying if ViTDet, a object-detection model based on a plain Vision Transformer,
-can be used in a different domain: human pose estimation.
+This project is about verifying if using a plain Vision Transformer (ViT) as a backbone for human pose estimation
+can be a good alternative to the current state-of-the-art models.
+For that, I extended a object-detection model, ViTDet, that uses a vanilla ViT as a backbone within a Mask R-CNN
+framework (originally made for CNN backbones). 
 
 In this project, I used the COCO keypoints dataset to fine-tune and test ViTDet on a human pose estimation task.
 I compared the obtained results with the ones of a very efficient baseline model, ViTPose.
 
 As we can see in the following table and figure, ViTDet obtains good results and may outperform ViTPose
-with a better fine-tuning. Using pre-trained weights of ViTDet trained on the COCO dataset allowed me to
+with a better training procedure. Using pre-trained weights of ViTDet trained on the COCO dataset allowed me to
 obtain a better performance than training from scratch.
 
 | model | backbone | mAP box | mAP keypoints |
