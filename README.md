@@ -26,7 +26,6 @@ Download the COCO dataset and put it in a `coco` folder at the root of the repos
 
 ```bash
 cd mmcv
-git checkout v1.3.9
 MMCV_WITH_OPS=1 pip install -e .
 cd ../ViTPose
 pip install -v -e .
