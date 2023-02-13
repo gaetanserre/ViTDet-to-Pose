@@ -29,6 +29,7 @@ cd mmcv
 MMCV_WITH_OPS=1 pip install -e .
 cd ../ViTPose
 pip install -v -e .
+cd ../
 pip install -r requirements.txt
 sh script_train.sh # to train ViTDet
 sh script_test.sh # to test ViTDet & ViTPose
