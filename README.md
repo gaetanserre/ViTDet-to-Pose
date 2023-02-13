@@ -25,12 +25,16 @@ obtain a better performance than training from scratch.
 Download the COCO dataset and put it in a `coco` folder at the root of the repository.
 
 ```bash
+pip install -r requirements.txt
+git clone https://github.com/open-mmlab/mmcv.git
 cd mmcv
+git checkout v1.3.9
 MMCV_WITH_OPS=1 pip install -e .
-cd ../ViTPose
+cd ..
+git clone https://github.com/ViTAE-Transformer/ViTPose.git
+cd ViTPose
 pip install -v -e .
 cd ../
-pip install -r requirements.txt
 sh script_train.sh # to train ViTDet
 sh script_test.sh # to test ViTDet & ViTPose
 ```
