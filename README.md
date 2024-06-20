@@ -8,7 +8,7 @@ framework (originally made for CNN backbones).
 In this project, I used the COCO keypoints dataset to fine-tune and test ViTDet on a human pose estimation task.
 I compared the obtained results with the ones of a very efficient baseline model, ViTPose.
 
-As we can see in the following table and figure, ViTDet obtains good results and may outperform ViTPose
+As one can see in the following table and figure, ViTDet obtains good results and may outperform ViTPose
 with a better training procedure. Using pre-trained weights of ViTDet trained on the COCO dataset allowed me to
 obtain a better performance than training from scratch.
 
